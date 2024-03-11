@@ -12,3 +12,23 @@ Accessibility
 - User correct heading tas
 - Screenreader-only text for card titles/username -- https://www.accessibility-developer-guide.com/examples/hiding-elements/visually/
 
+# project notes
+
+node.js
+-sudo apt update
+-sudo apt install nodejs
+-node -v
+
+npm
+-sudo apt install npm
+-npm -v
+-npm init -y
+
+sass
+-npm install sass --save-dev
+-sudo npm install -g sass
+
+Gulp
+npm install gulp-cli -g
+
+npm install @babel/core @babel/preset-env postcss autoprefixer browser-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser sass
