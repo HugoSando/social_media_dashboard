@@ -1,11 +1,79 @@
 @use '../util/' as *;
 
 .toggle {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr rem(57) 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "dark toggle light"
+        ". system .";
+    column-gap: rem(6);
+    row-gap: rem(4);
+
+    &__wrapper {
+        height: rem(24);
+        grid-area: toggle;
+        position: relative;
+    }
+
+    &__input {
+        opacity: 0;
+        margin: 0 rem(-2) 0 rem(-2);
+        width: rem(20);
+        height: rem(24);
+    }
+
+    &__background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        border-radius: rem(20);
+        pointer-events: none;
+        background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
+    }
 
     &__button {
-        width: rem(16);
-        height: rem(16);
+        position: absolute;
+        left: rem(3);
+        top: rem(3);
+        width: rem(18);
+        height: rem(18);
         border-radius: 50%;
-        background-color: var(--toggle);
+        background-color: var(--dark-bg);
+        transition: all 300ms ease-in-out;
     }
+
+    #light:checked ~ &__button {
+        left: calc(100% - rem(21));
+        right: rem(3);
+    }
+
+    #system:checked ~ &__button {
+        left: 50%;
+        right: auto;
+        transform: translate(-50%);
+    }
+
+
+    label {
+        font-size: rem(14);
+
+        &[for="dark"] {
+            grid-area: dark; 
+            justify-self: right; 
+            align-self: center;
+        }
+        &[for="light"] {
+            grid-area: light; 
+            align-self: center;
+        }
+        &[for="system"] {
+            grid-area: system; 
+            justify-self: center;
+        }
+    }
+
 }
