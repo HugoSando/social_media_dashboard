@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     margin-top: rem(36);
 
-    @include breackpoint(medium){
+    @include breakpoint(medium){
         justify-content: space-between;
         align-items: center;
     }
@@ -14,7 +14,7 @@
     &__title {
         width: 100%;
 
-        @include breackpoint(medium) {
+        @include breakpoint(medium) {
             width: auto;
         }
     }
@@ -22,7 +22,7 @@
     &__subtitle {
         font-size: rem(14);
         font-weight: 700;
-        color: var(--dark-text1);
+        color: var(--text-color2);
     }
 
 }
