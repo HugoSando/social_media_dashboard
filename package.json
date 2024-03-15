@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "autoprefixer": "^10.4.18",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.1.0",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.35",
+    "sass": "^1.71.1"
+  },
+  "name": "social_media_dashboard",
+  "description": "This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoSando/social_media_dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HugoSando/social_media_dashboard/issues"
+  },
+  "homepage": "https://github.com/HugoSando/social_media_dashboard#readme"
+}
